@@ -26,18 +26,10 @@ li {
   padding-right: 10px;
   width: 25%;
   font-size: 1.5em;
-  height: 40px;
-  margin: 0;
-  float: left;
-  display: table-cell;
+  display: inline-block;
   list-style-type: none;
-  border-bottom: 1px solid rgba(0,0,0,.1);
-  overflow-x: scroll;
-  overflow-y: hidden;
-}
-
-li:nth-child(2n) {
-  background: #eeeeee;
+  border: 1px solid rgba(0,0,0,.1);
+  margin: 0 !important;
 }
 
 #output {
@@ -48,8 +40,8 @@ li:nth-child(2n) {
 }
 #output li {
   text-align: center;
-  height: 100px;
   width: 100%;
+  margin: 0;
 }
 
 #random {
@@ -57,6 +49,7 @@ li:nth-child(2n) {
   font-size: 2em;
   background: #67be78;
   color: white;
+  margin: 0;
   width: 100%;
   text-align: center;
   cursor: pointer;
@@ -67,6 +60,18 @@ li:nth-child(2n) {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  vertical-align: middle;
+  margin: 0;
+  border: 0;
+  font-size: 2em;
+  text-align: center;
+  outline: 0;
+  border-bottom: 1px solid rgba(0,0,0,.1);
 }
 
 #random:hover {
