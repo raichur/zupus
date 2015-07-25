@@ -14,19 +14,26 @@ body {
 
 ul {
   width: 100%;
+  list-style: none;
+  display: table;
 }
 
 li {
   background: #fff;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding-top: 8px;
+  padding-bottom: 8px;
   padding-left: 10px;
   padding-right: 10px;
   width: 25%;
   font-size: 1.5em;
+  height: 40px;
+  margin: 0;
   float: left;
+  display: table-cell;
   list-style-type: none;
   border-bottom: 1px solid rgba(0,0,0,.1);
+  overflow-x: scroll;
+  overflow-y: hidden;
 }
 
 li:nth-child(2n) {
@@ -34,29 +41,47 @@ li:nth-child(2n) {
 }
 
 #output {
-  font-size: 4em;
+  font-size: 2.5em;
   font-weight: bold;
   background: none;
-  text-align: center;
   width: 100%;
-  float: none;
 }
 #output li {
+  text-align: center;
+  height: 100px;
   width: 100%;
-  float: none;
 }
 
 #random {
-  padding: 40px;
-  font-size: 2.5em;
+  padding: 20px;
+  font-size: 2em;
   background: #67be78;
   color: white;
   width: 100%;
   text-align: center;
   cursor: pointer;
   transition: all ease-in .3s;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 #random:hover {
   background: #479e57;
+}
+
+@media (max-width: 900px) {
+  li {
+    width: 50%;
+  }
+  #output {
+    width: 100%;
+    font-size: 2.5em;
+  }
+  #output li {
+    width: 100%;
+  }
 }

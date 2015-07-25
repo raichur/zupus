@@ -11,3 +11,7 @@ $('#random').click(function(e) {
   e.preventDefault();
   $('#output').html(items[Math.floor(Math.random()*items.length)]);
 });
+
+$(document).ajaxComplete(function() {
+  $('#output').html(items[Math.floor(Math.random()*items.length)]);
+});
